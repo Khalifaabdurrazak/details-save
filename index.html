@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Details Form</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <h2>User Registration Form</h2>
+  <form action="save.php" method="POST">
+    
+    <label>First Name:</label>
+    <input type="text" name="first_name" required>
+
+    <label>Last Name:</label>
+    <input type="text" name="last_name" required>
+
+    <label>Country:</label>
+    <input type="text" name="country" required>
+
+    <label>Address (ZIP, City, County, State):</label>
+    <textarea name="address" required></textarea>
+
+    <label>Amount:</label>
+    <input type="number" name="amount" step="0.01" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
